@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .RightMenue {
+        position: relative;
+        left: -250px;
+        float: right;
+      }
+      .LeftMenue {
+        float: left;
+        position: relative;
+        left: 204px;
+      }
+      
+      li {
+        display: inline-block;
+        padding: 3px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .menue:hover {
+        background-color: greenyellow;
+        width: auto;
+        height: 22px;
+        border-radius: 20px;
+        opacity: 0.3;
+      }
+
+      .EmojiLove {
+        position: relative;
+        top: -30px;
+      }
+      .EmojiLove:hover{   
+        
+        opacity: 0.3;
+      }
+      .plove {
+        font-family: fantasy;
+        position: relative;
+        top: -55px;
+      }
+      .plove:hover{
+        background-color: greenyellow;
+        width: auto;
+        height: 22px;
+        border-radius: 20px;
+        opacity: 0.3;
+
+      }
+      .dimage {
+        /* background-color: yellowgreen; */
+        position: relative;
+        top: 50px;
+        padding: 250px;
+        height: 300px;      
+        
+       
+      }
+      .imghome {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        top: -249px;
+       
+        transition: all 2s;
+        
+      }
+      .imghome:hover {
+        opacity: 0.6;
+        cursor: zoom-in;
+        /* Mame image zoom in*/
+        -ms-transform: scale(1.5); /*IE 9*/
+        -webkit-transform: scale(1.5); /* Safari*/
+        transform: scale(1.5); 
+        transition: all 2s;
+   
+        /*make image border*/
+        border: 1px solid;       
+        border-radius: 3px;
+        box-shadow: 5px 5px #999999;
+        overflow: hidden;
+
+      }
+      #dnature1{
+        position: relative;
+        top: -250px;
+        display: flex;
+        flex-direction: row;        
+      }
+      .item {
+        background-color: green;
+        width: 100%;
+        height: 200px;
+        margin: 2px;
+        overflow: hidden;
+        
+      }
+      .item:hover img {
+      transform: scale(10);
+      /* transform-origin: 50% 50%; */
+      transition: all 2s;
+      cursor:zoom-in;
+      }
+      #dnature1 :nth-child(2n+1) {        
+        
+        flex-shrink:1.4;       
+        overflow: hidden;
+      }
+
+      #dnature2{
+        position: relative;
+        top: -250px;
+        display: flex;
+        flex-direction: row;
+        
+      }
+     
+      
+      .imgnatsmall{
+        width: 100%;
+        height: 200px;
+        transition: all 2s;
+      }
+      .imgnatbig{
+        width: 100%;
+        height: 200px;
+        transition: all 2s;
+      }
+      #dnature2 :nth-child(2n+2) {        
+        background-color: yellow;
+        flex-shrink:1.2;
+      }
+      
+      
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="dmenue">
+        <ul class="LeftMenue">
+          <li>
+            <a href="#Love">
+              <p class="EmojiLove">&#128151;</p>
+              <p class="plove">Love</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="RightMenue">
+          <li>
+            <a href="#Home"><div class="menue">Home</div></a>
+          </li>
+          <li>
+            <a href="#Content"><div class="menue">Content</div></a>
+          </li>
+          <li>
+            <a href="#Service"><div class="menue">Service</div></a>
+          </li>
+          <li>
+            <a href="#About"><div class="menue">About</div></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="dimage">
+        <div>
+        <img src="./Images/home.jpg" alt="home" class="imghome" />
+        </div>
+        <div id="dnature1">
+          <div class="item">
+            <img src="./Images/nat1.jpg" alt="nature1" class="imgnatsmall">
+          </div>
+          <div class="item">
+            <img src="./Images/nat2.jpg" alt="nature2" class="imgnatbig">
+          </div>
+          <div class="item">
+            <img src="./Images/nat3.jpg" alt="nature3" class="imgnatsmall">
+          </div>
+          <div class="item">
+            <img src="./Images/nat4.jpg" alt="nature4" class="imgnatbig">
+          </div>
+          <div class="item">
+            <img src="./Images/nat5.jpg" alt="nature5" class="imgnatsmall">
+          </div>
+        </div>
+        <div id="dnature2">
+          <div class="item">
+            <img src="./Images/nat1.jpg" alt="nature1" class="imgnatbig">
+          </div>
+          <div class="item">
+            <img src="./Images/nat2.jpg" alt="nature2" class="imgnatsmall">
+          </div>
+          <div class="item">
+            <img src="./Images/nat3.jpg" alt="nature3" class="imgnatbig">
+          </div>
+          <div class="item">
+            <img src="./Images/nat4.jpg" alt="nature4" class="imgnatsmall">
+          </div>
+          <div class="item">
+            <img src="./Images/nat5.jpg" alt="nature5" class="imgnatbig">
+          </div>
+        </div>          
+       
+      </div>     
+      
+      </div>
+    </div>
+  </body>
+</html>
